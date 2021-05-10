@@ -1,12 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import _ from 'lodash';
+import difference from 'lodash/difference';
+// import capitilize from 'lodash/capitalize'
+import { Button } from "@material-ui/core";
 
 function App() {
+
+  var str = "fslfjslj";
+ var str2 = "fslfjsljdfsd";
+ difference(str,str2);
+ 
   return (
     <div className="App">
+      <Button variant="contained" color="primary">
+      Button Material ui tree shake
+    </Button>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
